@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".normal.Normal0"></activity>
+        <activity android:name=".Normal1"></activity>
+        <activity android:name=".normal.Normal0" />
         <activity android:name=".ranking.RankingNovato" />
         <activity android:name=".novato.Novato9" />
         <activity android:name=".novato.Novato8" />

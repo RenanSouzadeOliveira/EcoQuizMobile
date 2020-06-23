@@ -15,4 +15,9 @@
     <string name="crNormal">15</string>
     <string name="pontuacao">Pontuação:</string>
     <string name="pontuacaoAtual">0</string>
+    <string name="enunciado_normal1">Qual a ciência que estuda o comportamento animal?</string>
+    <string name="R0N1">ETOLOGIA</string>
+    <string name="R1N1">FISIOLOGIA</string>
+    <string name="R2N1">ANATOMIA</string>
+    <string name="R3N1">TAXONOMIA</string>
 </resources>
