@@ -15,6 +15,8 @@ public class PartidaController {
         respostas.add("RHIZOBIUM");
         respostas.add("CADEIA ALIMENTAR");
         respostas.add("AMENSALISMO");
+        respostas.add("POLUIÇÃO AMBIENTAL");
+        respostas.add("ETOLOGIA");
 
 
         if(respostas.contains(alternativa)){
