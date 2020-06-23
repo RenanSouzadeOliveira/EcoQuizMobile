@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EcoQuiz</string>
+    <string name="iniciar_partida">Iniciar Partida</string>
+    <string name="consultar_ranking">Consultar Ranking</string>
+    <string name="bonus">Bônus 2x!!!</string>
+    <string name="ok_message">OK</string>
+    <string name="msg_vida_extra">VOCÊ GANHOU UMA VIDA EXTRA!!!</string>
+    <string name="msg_continue">CONTINUAR</string>
+    <string name="enunciado_normal0">Qual é o termo empregado para designar a deterioração das condições físicas, químicas e biológicas de um ecossistema?</string>
+    <string name="R0N0">POLUIÇÃO AMBIENTAL</string>
+    <string name="R1N0">AQUECIMENTO GLOBAL</string>
+    <string name="R2N0">POLUENTES ATMOSFÉRICOS</string>
+    <string name="R3N0">POLUENTES AQUÁTICOS</string>
+    <string name="tempo">Tempo:</string>
+    <string name="crNormal">15</string>
+    <string name="pontuacao">Pontuação:</string>
+    <string name="pontuacaoAtual">0</string>
+</resources>

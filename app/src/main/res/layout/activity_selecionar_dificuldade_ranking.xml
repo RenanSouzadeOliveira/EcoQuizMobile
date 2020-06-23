@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ranking.SelecionarDificuldadeRanking">
+
+    <ImageView
+        android:id="@+id/imgicon"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_eco_24" />
+
+    <TextView
+        android:id="@+id/txtEscolherDificuldadeRanking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Informe a dificuldade do ranking que deseja consultar:"
+        android:textAlignment="center"
+        android:textColor="#228B22"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgicon"
+        app:layout_constraintStart_toStartOf="@+id/imgicon"
+        app:layout_constraintTop_toBottomOf="@+id/imgicon" />
+
+    <Button
+        android:id="@+id/btnNovato"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="abrirRankingNovato"
+        android:text="Novato"
+        android:textAlignment="center"
+        android:textColor="#90EE90"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtEscolherDificuldadeRanking"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEscolherDificuldadeRanking" />
+
+    <Button
+        android:id="@+id/btnNormal"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Normal"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#90EE90"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnNovato"
+        app:layout_constraintStart_toStartOf="@+id/btnNovato"
+        app:layout_constraintTop_toBottomOf="@+id/btnNovato" />
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Hard"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#90EE90"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnNormal"
+        app:layout_constraintStart_toStartOf="@+id/btnNormal"
+        app:layout_constraintTop_toBottomOf="@+id/btnNormal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

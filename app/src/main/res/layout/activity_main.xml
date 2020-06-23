@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ecoquizmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="586dp"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="14dp">
+
+        <Button
+            android:id="@+id/btnSair"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonstyle"
+            android:onClick="fechar"
+            android:text="Sair"
+            android:textColor="#90EE90"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnCreditos"
+            app:layout_constraintStart_toStartOf="@+id/btnCreditos"
+            app:layout_constraintTop_toBottomOf="@+id/btnCreditos" />
+
+        <Button
+            android:id="@+id/btnCreditos"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Créditos"
+            android:textColor="#90EE90"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnConsultarRanking"
+            app:layout_constraintStart_toStartOf="@+id/btnConsultarRanking"
+            app:layout_constraintTop_toBottomOf="@+id/btnConsultarRanking" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="0dp"
+            android:layout_height="57dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_eco_24" />
+
+        <Button
+            android:id="@+id/btnConsultarRanking"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/buttonstyle"
+            android:onClick="nextEscolherDificuldadeRanking"
+            android:text="@string/consultar_ranking"
+            android:textColor="#90EE90"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btn_IniciarPartida"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_IniciarPartida"
+            app:layout_constraintTop_toBottomOf="@+id/btn_IniciarPartida"
+            tools:text="Consultar Ranking" />
+
+        <Button
+            android:id="@+id/btn_IniciarPartida"
+            android:layout_width="160dp"
+            android:layout_height="0dp"
+            android:background="@drawable/buttonstyle"
+            android:onClick="nextEscolherDificuldade"
+            android:text="@string/iniciar_partida"
+            android:textColor="#90EE90"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

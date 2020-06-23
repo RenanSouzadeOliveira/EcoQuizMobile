@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelecionarDificuldade">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_eco_24" />
+
+    <TextView
+        android:id="@+id/txtInserirNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Insira seu nome abaixo:"
+        android:textAlignment="center"
+        android:textColor="#228B22"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#228B22"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInserirNome" />
+
+    <TextView
+        android:id="@+id/txtEscolherDificuldade"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Escolha a dificuldade do jogo:"
+        android:textAlignment="center"
+        android:textColor="#228B22"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/edtNome"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome" />
+
+    <Button
+        android:id="@+id/btnNovato"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="nextNovato"
+        android:text="Novato"
+        android:textAlignment="center"
+        android:textColor="#90EE90"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtEscolherDificuldade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEscolherDificuldade" />
+
+    <Button
+        android:id="@+id/btnNormal"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="nextNormal"
+        android:text="Normal"
+        android:textAlignment="center"
+        android:textColor="#90EE90"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnNovato"
+        app:layout_constraintStart_toStartOf="@+id/btnNovato"
+        app:layout_constraintTop_toBottomOf="@+id/btnNovato" />
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonstyle"
+        android:text="Hard"
+        android:textAlignment="center"
+        android:textColor="#90EE90"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnNormal"
+        app:layout_constraintStart_toStartOf="@+id/btnNormal"
+        app:layout_constraintTop_toBottomOf="@+id/btnNormal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

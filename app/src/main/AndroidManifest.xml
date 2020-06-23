@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecoquiz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_baseline_eco_24"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".normal.Normal0"></activity>
+        <activity android:name=".ranking.RankingNovato" />
+        <activity android:name=".novato.Novato9" />
+        <activity android:name=".novato.Novato8" />
+        <activity android:name=".novato.Novato7" />
+        <activity android:name=".novato.Novato6" />
+        <activity android:name=".novato.Novato5" />
+        <activity android:name=".novato.Novato4" />
+        <activity android:name=".novato.Novato3" />
+        <activity android:name=".novato.Novato2" />
+        <activity android:name=".novato.Novato1" />
+        <activity android:name=".novato.Novato0" />
+        <activity android:name=".ranking.SelecionarDificuldadeRanking" />
+        <activity android:name=".SelecionarDificuldade" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+    </application>
+
+</manifest>

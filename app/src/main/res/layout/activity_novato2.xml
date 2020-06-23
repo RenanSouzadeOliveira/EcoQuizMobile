@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".novato.Novato2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="0dp"
+                    android:layout_height="57dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_baseline_eco_24" />
+
+                <TextView
+                    android:id="@+id/txtEnunciado"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Um dos principais impactos ambientais causados por resíduos sólidos são:"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+                <Button
+                    android:id="@+id/btnResposta0"
+                    android:layout_width="160dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="verificarResposta0"
+                    android:text="Queimadas"
+                    android:textAlignment="center"
+                    android:textColor="@color/colotSecundari"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtEnunciado"
+                    app:layout_constraintStart_toStartOf="@+id/txtEnunciado"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEnunciado" />
+
+                <Button
+                    android:id="@+id/btnResposta1"
+                    android:layout_width="160dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="verificarResposta1"
+                    android:text="CONTAMINAÇÃO DAS ÁGUAS"
+                    android:textAlignment="center"
+                    android:textColor="@color/colotSecundari"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnResposta0"
+                    app:layout_constraintStart_toStartOf="@+id/btnResposta0"
+                    app:layout_constraintTop_toBottomOf="@+id/btnResposta0" />
+
+                <Button
+                    android:id="@+id/btnResposta2"
+                    android:layout_width="160dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="verificarResposta2"
+                    android:text="Desmatamento"
+                    android:textAlignment="center"
+                    android:textColor="@color/colotSecundari"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnResposta1"
+                    app:layout_constraintStart_toStartOf="@+id/btnResposta1"
+                    app:layout_constraintTop_toBottomOf="@+id/btnResposta1" />
+
+                <Button
+                    android:id="@+id/btnResposta3"
+                    android:layout_width="160dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/buttonstyle"
+                    android:onClick="verificarResposta3"
+                    android:text="Extinção"
+                    android:textAlignment="center"
+                    android:textColor="@color/colotSecundari"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnResposta2"
+                    app:layout_constraintStart_toStartOf="@+id/btnResposta2"
+                    app:layout_constraintTop_toBottomOf="@+id/btnResposta2" />
+
+                <TextView
+                    android:id="@+id/txtTempo"
+                    android:layout_width="90dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Tempo:"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnResposta3" />
+
+                <TextView
+                    android:id="@+id/txtCronometro"
+                    android:layout_width="30dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="16dp"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/btnResposta3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/txtTempo"
+                    app:layout_constraintTop_toBottomOf="@+id/btnResposta3" />
+
+                <TextView
+                    android:id="@+id/txtPontuaxion"
+                    android:layout_width="130dp"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Pontuação:"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.056"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTempo" />
+
+                <TextView
+                    android:id="@+id/txtPontuacaoAtual"
+                    android:layout_width="45dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/txtCronometro"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/txtPontuaxion"
+                    app:layout_constraintTop_toBottomOf="@+id/txtCronometro" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
