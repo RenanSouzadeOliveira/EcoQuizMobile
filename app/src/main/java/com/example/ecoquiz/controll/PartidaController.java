@@ -20,6 +20,7 @@ public class PartidaController {
         respostas.add("HABITAT");
         respostas.add("VACA");
         respostas.add("FATORES ABIÓTICOS");
+        respostas.add("ESPÉCIES GENERALISTAS");
 
 
         if(respostas.contains(alternativa)){
