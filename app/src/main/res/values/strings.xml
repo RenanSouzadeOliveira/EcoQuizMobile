@@ -20,4 +20,9 @@
     <string name="R1N1">FISIOLOGIA</string>
     <string name="R2N1">ANATOMIA</string>
     <string name="R3N1">TAXONOMIA</string>
+    <string name="enunciado_normal2">Espaço onde seres vivos se localizam e se desenvolvem:</string>
+    <string name="R0N2">NICHO</string>
+    <string name="R1N2">REGIÃO</string>
+    <string name="R2N2">AMBIENTE</string>
+    <string name="R3N2">HABITAT</string>
 </resources>

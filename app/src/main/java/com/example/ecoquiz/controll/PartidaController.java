@@ -17,6 +17,7 @@ public class PartidaController {
         respostas.add("AMENSALISMO");
         respostas.add("POLUIÇÃO AMBIENTAL");
         respostas.add("ETOLOGIA");
+        respostas.add("HABITAT");
 
 
         if(respostas.contains(alternativa)){
