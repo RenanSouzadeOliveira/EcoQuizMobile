@@ -31,7 +31,7 @@ import com.google.gson.JsonObject;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 
-public class Normal7 extends AppCompatActivity {
+public class Normal8 extends AppCompatActivity {
     private AlertDialog alerta;
     private CountDownTimer relogio;
     private RewardedAd rewardedAd;
@@ -39,11 +39,10 @@ public class Normal7 extends AppCompatActivity {
     MediaPlayer mp;
 
     Player player;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_normal7);
+        setContentView(R.layout.activity_normal8);
         player = getIntent().getExtras().getParcelable("user");
         TextView pontuacao = (TextView)findViewById(R.id.txtPontuacaoAtual);
         pontuacao.setText(Integer.toString(player.getPontuacao()));
@@ -85,7 +84,7 @@ public class Normal7 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Normal7.this, Normal8.class);
+            Intent it = new Intent(Normal8.this, Normal3.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         } else{
@@ -94,7 +93,7 @@ public class Normal7 extends AppCompatActivity {
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Normal7.this, Normal8.class);
+            Intent it = new Intent(Normal8.this, Normal3.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         }
@@ -112,7 +111,7 @@ public class Normal7 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Normal7.this, Normal8.class);
+            Intent it = new Intent(Normal8.this, Normal3.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         } else{
@@ -121,7 +120,7 @@ public class Normal7 extends AppCompatActivity {
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Normal7.this, Normal8.class);
+            Intent it = new Intent(Normal8.this, Normal3.class);
             it.putExtra("user", player);
             startActivityForResult(it, 0);
         }
@@ -139,7 +138,7 @@ public class Normal7 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Normal7.this, Normal8.class);
+            Intent it = new Intent(Normal8.this, Normal3.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         } else{
@@ -148,7 +147,7 @@ public class Normal7 extends AppCompatActivity {
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Normal7.this, Normal8.class);
+            Intent it = new Intent(Normal8.this, Normal3.class);
             it.putExtra("user", player);
             startActivityForResult(it, 0);
         }
@@ -166,7 +165,7 @@ public class Normal7 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Normal7.this, Normal8.class);
+            Intent it = new Intent(Normal8.this, Normal3.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         } else{
@@ -175,7 +174,7 @@ public class Normal7 extends AppCompatActivity {
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Normal7.this, Normal8.class);
+            Intent it = new Intent(Normal8.this, Normal3.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         }
@@ -196,7 +195,7 @@ public class Normal7 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     registrarOnline(player.getNome().toString(), player.getPontuacao());
-                    Intent it = new Intent(Normal7.this, MainActivity.class);
+                    Intent it = new Intent(Normal8.this, MainActivity.class);
                     startActivityForResult(it, 0);
                 }
             });
@@ -205,7 +204,7 @@ public class Normal7 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (rewardedAd.isLoaded()) {
-                        Activity activityContext = Normal7.this;
+                        Activity activityContext = Normal8.this;
                         RewardedAdCallback adCallback = new RewardedAdCallback() {
                             @Override
                             public void onRewardedAdOpened() {
@@ -219,14 +218,14 @@ public class Normal7 extends AppCompatActivity {
 
                             @Override
                             public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
-                                AlertDialog.Builder abc = new AlertDialog.Builder(Normal7.this);
+                                AlertDialog.Builder abc = new AlertDialog.Builder(Normal8.this);
                                 View dialog = getLayoutInflater().inflate(R.layout.dialog_continuar, null);
                                 Button btnContinue = (Button)dialog.findViewById(R.id.btnContinuar);
 
                                 btnContinue.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
-                                        Intent it = new Intent(Normal7.this, Normal8.class);
+                                        Intent it = new Intent(Normal8.this, Normal3.class);
                                         it.putExtra("user",player);
                                         startActivityForResult(it, 0);
                                     }
@@ -257,7 +256,7 @@ public class Normal7 extends AppCompatActivity {
             msg.setNegativeButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    Intent it = new Intent(Normal7.this, MainActivity.class);
+                    Intent it = new Intent(Normal8.this, MainActivity.class);
                     startActivityForResult(it, 0);
                 }
             });

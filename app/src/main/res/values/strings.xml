@@ -50,4 +50,9 @@
     <string name="R1N7">CONSUMIR PRIMÁRIO</string>
     <string name="R2N7">CONSUMIDOR SECUNDÁRIO</string>
     <string name="R3N7">CONSUMIDOR TERCIÁRIO</string>
+    <string name="enunciado_normal8">Considerando a poluição em ambientes aquáticos por produtos clorados, o componente biótico da cadeia que deverá apresentar maior concetração de produtos será:</string>
+    <string name="R0N8">O FITOPLÂNCTON</string>
+    <string name="R1N8">O ZOOPLÂNCTON</string>
+    <string name="R2N8">OS PEIXES PLANCTÓFAGOS</string>
+    <string name="R3N8">AS AVES PISCÍVORAS</string>
 </resources>

@@ -23,6 +23,7 @@ public class PartidaController {
         respostas.add("ESPÉCIES GENERALISTAS");
         respostas.add("PRODUTORES E DECOMPOSITORES");
         respostas.add("CONSUMIDOR SECUNDÁRIO");
+        respostas.add("AS AVES PISCÍVORAS");
 
 
         if(respostas.contains(alternativa)){
