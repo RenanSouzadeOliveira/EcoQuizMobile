@@ -40,4 +40,9 @@
     <string name="R1N5">ESPÉCIES CONSUMISTAS</string>
     <string name="R2N5">ESPÉCIES AMPLAS</string>
     <string name="R3N5">ESPÉCIES GENERALISTAS</string>
+    <string name="enunciado_normal6">Os organismos indispensáveis para manter um ecossistema são:</string>
+    <string name="R0N6">CARNÍVOROS E HERBÍVOROS</string>
+    <string name="R1N6">PRODUTORES E HERBÍVOROS</string>
+    <string name="R2N6">PRODUTORES E DECOMPOSITORES</string>
+    <string name="R3N6">HERBÍVOROS E DECOMPOSITORES</string>
 </resources>

@@ -21,6 +21,7 @@ public class PartidaController {
         respostas.add("VACA");
         respostas.add("FATORES ABIÓTICOS");
         respostas.add("ESPÉCIES GENERALISTAS");
+        respostas.add("PRODUTORES E DECOMPOSITORES");
 
 
         if(respostas.contains(alternativa)){
