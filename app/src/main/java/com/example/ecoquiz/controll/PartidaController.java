@@ -24,6 +24,7 @@ public class PartidaController {
         respostas.add("PRODUTORES E DECOMPOSITORES");
         respostas.add("CONSUMIDOR SECUNDÁRIO");
         respostas.add("AS AVES PISCÍVORAS");
+        respostas.add("NATURAL E INTENSIFICADO POR AÇÕES HUMANAS");
 
 
         if(respostas.contains(alternativa)){

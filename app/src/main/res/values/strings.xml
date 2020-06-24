@@ -55,4 +55,9 @@
     <string name="R1N8">O ZOOPLÂNCTON</string>
     <string name="R2N8">OS PEIXES PLANCTÓFAGOS</string>
     <string name="R3N8">AS AVES PISCÍVORAS</string>
+    <string name="enunciado_normal9">O efeito estufa é um fenômeno, onde seu processo é:</string>
+    <string name="R0N9">NATURAL E INTENSIFICADO POR AÇÕES HUMANAS</string>
+    <string name="R1N9">NATURAL E SEM RELAÇÕES COM AÇÕES SOCIAIS</string>
+    <string name="R2N9">ARTIFICIAL</string>
+    <string name="R3N9">RECENTE</string>
 </resources>

@@ -22,6 +22,7 @@ import com.example.ecoquiz.MainActivity;
 import com.example.ecoquiz.R;
 import com.example.ecoquiz.controll.PartidaController;
 import com.example.ecoquiz.model.Player;
+import com.example.ecoquiz.novato.Novato9;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.rewarded.RewardItem;
 import com.google.android.gms.ads.rewarded.RewardedAd;
@@ -31,7 +32,7 @@ import com.google.gson.JsonObject;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 
-public class Normal8 extends AppCompatActivity {
+public class Normal9 extends AppCompatActivity {
     private AlertDialog alerta;
     private CountDownTimer relogio;
     private RewardedAd rewardedAd;
@@ -39,10 +40,11 @@ public class Normal8 extends AppCompatActivity {
     MediaPlayer mp;
 
     Player player;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_normal8);
+        setContentView(R.layout.activity_normal9);
         player = getIntent().getExtras().getParcelable("user");
         TextView pontuacao = (TextView)findViewById(R.id.txtPontuacaoAtual);
         pontuacao.setText(Integer.toString(player.getPontuacao()));
@@ -84,18 +86,14 @@ public class Normal8 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Normal8.this, Normal9.class);
-            it.putExtra("user",player);
-            startActivityForResult(it, 0);
+            exibePontuacao(player);
         } else{
             mp.stop();
             mp = MediaPlayer.create(this, R.raw.erro);
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Normal8.this, Normal9.class);
-            it.putExtra("user",player);
-            startActivityForResult(it, 0);
+            exibePontuacao(player);
         }
     }
 
@@ -111,18 +109,14 @@ public class Normal8 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Normal8.this, Normal9.class);
-            it.putExtra("user",player);
-            startActivityForResult(it, 0);
+            exibePontuacao(player);
         } else{
             mp.stop();
             mp = MediaPlayer.create(this, R.raw.erro);
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Normal8.this, Normal9.class);
-            it.putExtra("user", player);
-            startActivityForResult(it, 0);
+            exibePontuacao(player);
         }
     }
 
@@ -138,18 +132,14 @@ public class Normal8 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Normal8.this, Normal9.class);
-            it.putExtra("user",player);
-            startActivityForResult(it, 0);
+            exibePontuacao(player);
         } else{
             mp.stop();
             mp = MediaPlayer.create(this, R.raw.erro);
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Normal8.this, Normal9.class);
-            it.putExtra("user", player);
-            startActivityForResult(it, 0);
+            exibePontuacao(player);
         }
     }
 
@@ -165,46 +155,41 @@ public class Normal8 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Normal8.this, Normal9.class);
-            it.putExtra("user",player);
-            startActivityForResult(it, 0);
+            exibePontuacao(player);
         } else{
             mp.stop();
             mp = MediaPlayer.create(this, R.raw.erro);
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Normal8.this, Normal9.class);
-            it.putExtra("user",player);
-            startActivityForResult(it, 0);
+            exibePontuacao(player);
         }
     }
 
-    //Exibe alert com nome e pontuacao do usuario, também registra no banco de dados
     public void exibePontuacao(final Player player){
-
         try {
             AlertDialog.Builder msg = new AlertDialog.Builder(this);
-            View dialog = getLayoutInflater().inflate(R.layout.dialog_game_over, null);
+            View dialog = getLayoutInflater().inflate(R.layout.dialog_game_finish, null);
             Button btnOk = (Button)dialog.findViewById(R.id.btnFim);
             TextView txtPlayer = (TextView)dialog.findViewById(R.id.txtPlayer);
             txtPlayer.setText(player.toString());
             ImageButton adButton = (ImageButton)dialog.findViewById(R.id.adButton);
-            // Encerra a partida e registra no banco de dados
+
             btnOk.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     registrarOnline(player.getNome().toString(), player.getPontuacao());
-                    Intent it = new Intent(Normal8.this, MainActivity.class);
+                    Intent it = new Intent(Normal9.this, MainActivity.class);
                     startActivityForResult(it, 0);
                 }
             });
+
             //Video recompensado
             adButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if (rewardedAd.isLoaded()) {
-                        Activity activityContext = Normal8.this;
+                        Activity activityContext = Normal9.this;
                         RewardedAdCallback adCallback = new RewardedAdCallback() {
                             @Override
                             public void onRewardedAdOpened() {
@@ -218,21 +203,26 @@ public class Normal8 extends AppCompatActivity {
 
                             @Override
                             public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
-                                AlertDialog.Builder abc = new AlertDialog.Builder(Normal8.this);
-                                View dialog = getLayoutInflater().inflate(R.layout.dialog_continuar, null);
-                                Button btnContinue = (Button)dialog.findViewById(R.id.btnContinuar);
+                                player.setPontuacao(player.getPontuacao());
+                                AlertDialog.Builder abc = new AlertDialog.Builder(Normal9.this);
+                                View dialog = getLayoutInflater().inflate(R.layout.dialog_bonus, null);
+                                Button btnOk = (Button)dialog.findViewById(R.id.btnOk);
+                                TextView txtPlayer = (TextView)dialog.findViewById(R.id.txtPlayer);
+                                txtPlayer.setText(player.toString());
 
-                                btnContinue.setOnClickListener(new View.OnClickListener() {
+                                btnOk.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
-                                        Intent it = new Intent(Normal8.this, Normal9.class);
-                                        it.putExtra("user",player);
+                                        registrarOnline(player.getNome().toString(), player.getPontuacao());
+                                        Intent it = new Intent(Normal9.this, MainActivity.class);
+                                        it.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                         startActivityForResult(it, 0);
                                     }
                                 });
                                 abc.setView(dialog);
                                 alerta = abc.create();
                                 alerta.show();
+
                             }
 
                             @Override
@@ -242,13 +232,19 @@ public class Normal8 extends AppCompatActivity {
                         };
                         rewardedAd.show(activityContext, adCallback);
                     } else {
-                        Log.d("TAG", "The rewarded ad wasn't loaded yet.");
+                        AlertDialog.Builder msg = new AlertDialog.Builder(Normal9.this);
+                        msg.setTitle("Bônus indisponível!!!");
+                        msg.setMessage("Bônus indisponível no momento, tente mais tarde");
+                        msg.setPositiveButton("OK", null);
+                        alerta = msg.create();
+                        alerta.show();
                     }
                 }
             });
             msg.setView(dialog);
             alerta = msg.create();
             alerta.show();
+
         } catch (SQLException e){
             AlertDialog.Builder msg = new AlertDialog.Builder(this);
             msg.setTitle("Erro");
@@ -256,13 +252,15 @@ public class Normal8 extends AppCompatActivity {
             msg.setNegativeButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    Intent it = new Intent(Normal8.this, MainActivity.class);
+                    Intent it = new Intent(Normal9.this, MainActivity.class);
                     startActivityForResult(it, 0);
                 }
             });
             msg.show();
         }
     }
+
+
     @Override
     public void onBackPressed() {
         this.moveTaskToBack(true);
