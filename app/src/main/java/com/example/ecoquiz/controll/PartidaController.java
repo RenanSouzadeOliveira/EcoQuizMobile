@@ -19,6 +19,7 @@ public class PartidaController {
         respostas.add("ETOLOGIA");
         respostas.add("HABITAT");
         respostas.add("VACA");
+        respostas.add("FATORES ABIÓTICOS");
 
 
         if(respostas.contains(alternativa)){

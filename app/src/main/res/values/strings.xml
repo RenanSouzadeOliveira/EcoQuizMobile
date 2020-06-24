@@ -30,4 +30,9 @@
     <string name="R1N3">LEÃO</string>
     <string name="R2N3">VACA</string>
     <string name="R3N3">BALEIA</string>
+    <string name="enunciado_normal4">Os organismos interagem entre si e com todas as partes não vivas no ambiente, essas partes não vivas são chamadas de:</string>
+    <string name="R0N4">FATORES ABIÓTICOS</string>
+    <string name="R1N4">FATORES BIÓTICOS</string>
+    <string name="R2N4">BIOSFERA</string>
+    <string name="R3N4">NICHO ECOLÓGICO</string>
 </resources>
