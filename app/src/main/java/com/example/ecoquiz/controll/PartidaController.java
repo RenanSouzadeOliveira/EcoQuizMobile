@@ -18,6 +18,7 @@ public class PartidaController {
         respostas.add("POLUIÇÃO AMBIENTAL");
         respostas.add("ETOLOGIA");
         respostas.add("HABITAT");
+        respostas.add("VACA");
 
 
         if(respostas.contains(alternativa)){

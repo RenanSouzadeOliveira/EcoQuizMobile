@@ -25,4 +25,9 @@
     <string name="R1N2">REGIÃO</string>
     <string name="R2N2">AMBIENTE</string>
     <string name="R3N2">HABITAT</string>
+    <string name="enunciado_normal3">Qual das alternativas abaixo é um consumidor primário?</string>
+    <string name="R0N3">FUNGOS</string>
+    <string name="R1N3">LEÃO</string>
+    <string name="R2N3">VACA</string>
+    <string name="R3N3">BALEIA</string>
 </resources>

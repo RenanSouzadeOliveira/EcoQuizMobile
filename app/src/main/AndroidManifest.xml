@@ -11,23 +11,58 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".normal.Normal2" android:screenOrientation="portrait"></activity>
-        <activity android:name=".normal.Normal1" android:screenOrientation="portrait"/>
-        <activity android:name=".normal.Normal0" android:screenOrientation="portrait"/>
-        <activity android:name=".ranking.RankingNovato" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato9" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato8" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato7" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato6" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato5" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato4" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato3" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato2" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato1" android:screenOrientation="portrait"/>
-        <activity android:name=".novato.Novato0" android:screenOrientation="portrait"/>
-        <activity android:name=".ranking.SelecionarDificuldadeRanking" android:screenOrientation="portrait"/>
-        <activity android:name=".SelecionarDificuldade" android:screenOrientation="portrait"/>
-        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+        <activity android:name=".normal.Normal3"></activity>
+        <activity
+            android:name=".normal.Normal2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".normal.Normal1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".normal.Normal0"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ranking.RankingNovato"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato8"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".novato.Novato0"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ranking.SelecionarDificuldadeRanking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelecionarDificuldade"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
