@@ -22,6 +22,7 @@ public class PartidaController {
         respostas.add("FATORES ABIÓTICOS");
         respostas.add("ESPÉCIES GENERALISTAS");
         respostas.add("PRODUTORES E DECOMPOSITORES");
+        respostas.add("CONSUMIDOR SECUNDÁRIO");
 
 
         if(respostas.contains(alternativa)){

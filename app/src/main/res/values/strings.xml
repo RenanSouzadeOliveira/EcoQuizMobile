@@ -45,4 +45,9 @@
     <string name="R1N6">PRODUTORES E HERBÍVOROS</string>
     <string name="R2N6">PRODUTORES E DECOMPOSITORES</string>
     <string name="R3N6">HERBÍVOROS E DECOMPOSITORES</string>
+    <string name="enunciado_normal7">Uma pessoa ao comer o cogumelo shitake está se comportando como:</string>
+    <string name="R0N7">PRODUTOR</string>
+    <string name="R1N7">CONSUMIR PRIMÁRIO</string>
+    <string name="R2N7">CONSUMIDOR SECUNDÁRIO</string>
+    <string name="R3N7">CONSUMIDOR TERCIÁRIO</string>
 </resources>
