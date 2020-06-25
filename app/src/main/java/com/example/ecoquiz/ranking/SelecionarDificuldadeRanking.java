@@ -27,4 +27,9 @@ public class SelecionarDificuldadeRanking extends AppCompatActivity {
         Intent it = new Intent(SelecionarDificuldadeRanking.this, RankingNovato.class);
         startActivityForResult(it, 0);
     }
+
+    public void abrirRankingNormal(View view){
+        Intent it = new Intent(SelecionarDificuldadeRanking.this, RankingNormal.class);
+        startActivityForResult(it, 0);
+    }
 }

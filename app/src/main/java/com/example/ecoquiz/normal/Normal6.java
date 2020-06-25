@@ -226,7 +226,7 @@ public class Normal6 extends AppCompatActivity {
                                 btnContinue.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
-                                        Intent it = new Intent(Normal6.this, Normal3.class);
+                                        Intent it = new Intent(Normal6.this, Normal7.class);
                                         it.putExtra("user",player);
                                         startActivityForResult(it, 0);
                                     }
