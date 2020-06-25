@@ -40,6 +40,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/buttonstyle"
+            android:onClick="nextCreditos"
             android:text="Créditos"
             android:textColor="#90EE90"
             android:textStyle="bold"

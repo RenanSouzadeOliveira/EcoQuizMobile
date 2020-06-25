@@ -11,10 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ranking.RankingNormal" android:screenOrientation="portrait"></activity>
-        <activity android:name=".normal.Normal9" android:screenOrientation="portrait"/>
-        <activity android:name=".normal.Normal8" android:screenOrientation="portrait"/>
-        <activity android:name=".normal.Normal7" android:screenOrientation="portrait"/>
+        <activity android:name=".Creditos"></activity>
+        <activity
+            android:name=".ranking.RankingNormal"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".normal.Normal9"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".normal.Normal8"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".normal.Normal7"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".normal.Normal6"
             android:screenOrientation="portrait" />

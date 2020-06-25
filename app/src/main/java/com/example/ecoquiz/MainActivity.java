@@ -48,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent(MainActivity.this, SelecionarDificuldadeRanking.class);
         startActivityForResult(it, 0);
     }
+    public void nextCreditos(View v){
+        Intent it = new Intent(MainActivity.this, Creditos.class);
+        startActivityForResult(it, 0);
+    }
 
     public void fechar(View v){
         finishAffinity();
