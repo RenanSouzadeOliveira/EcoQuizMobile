@@ -54,7 +54,7 @@ public class Novato0 extends AppCompatActivity {
 
         final TextView text = (TextView)findViewById(R.id.txtCronometro);
 
-        relogio = new CountDownTimer(25000, 1000) {
+        relogio = new CountDownTimer(30000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 text.setText(Long.toString(millisUntilFinished / 1000));

@@ -51,7 +51,7 @@ public class Normal2 extends AppCompatActivity {
         mp = MediaPlayer.create(this, R.raw.timer);
         final TextView text = (TextView)findViewById(R.id.txtCronometro);
 
-        relogio = new CountDownTimer(15000, 1000) {
+        relogio = new CountDownTimer(20000, 1000) {
 
             public void onTick(long millisUntilFinished) {
                 text.setText(Long.toString(millisUntilFinished / 1000));
