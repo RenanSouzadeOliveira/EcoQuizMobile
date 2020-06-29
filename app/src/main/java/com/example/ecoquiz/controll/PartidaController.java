@@ -29,6 +29,10 @@ public class PartidaController {
         respostas.add("EFEITO ESTUFA");
         respostas.add("AUMENTO DE TERREMOTOS");
         respostas.add("ELEVAÇÃO DA UMIDADE");
+        respostas.add("DIMINUIÇÃO DE EROSÃO");
+        respostas.add("REDUÇÃO DO AQUECIMENTO GLOBAL");
+        respostas.add("AUMENTO DE FOTOSSÍNTESE DAS ALGAS");
+        respostas.add("FERTILIZAÇÃO QUÍMICA");
 
 
         if(respostas.contains(alternativa)){

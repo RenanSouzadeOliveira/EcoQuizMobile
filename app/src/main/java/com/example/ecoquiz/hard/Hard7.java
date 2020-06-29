@@ -32,7 +32,7 @@ import com.google.gson.JsonObject;
 import com.koushikdutta.async.future.FutureCallback;
 import com.koushikdutta.ion.Ion;
 
-public class Hard3 extends AppCompatActivity {
+public class Hard7 extends AppCompatActivity {
     private AlertDialog alerta;
     private CountDownTimer relogio;
     private RewardedAd rewardedAd;
@@ -44,7 +44,7 @@ public class Hard3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hard3);
+        setContentView(R.layout.activity_hard7);
         player = getIntent().getExtras().getParcelable("user");
         TextView pontuacao = (TextView)findViewById(R.id.txtPontuacaoAtual);
         pontuacao.setText(Integer.toString(player.getPontuacao()));
@@ -86,7 +86,7 @@ public class Hard3 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Hard3.this, Hard4.class);
+            Intent it = new Intent(Hard7.this, Hard8.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         } else{
@@ -95,7 +95,7 @@ public class Hard3 extends AppCompatActivity {
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Hard3.this, Hard4.class);
+            Intent it = new Intent(Hard7.this, Hard8.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         }
@@ -113,7 +113,7 @@ public class Hard3 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Hard3.this, Hard4.class);
+            Intent it = new Intent(Hard7.this, Hard8.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         } else{
@@ -122,7 +122,7 @@ public class Hard3 extends AppCompatActivity {
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Hard3.this, Hard4.class);
+            Intent it = new Intent(Hard7.this, Hard8.class);
             it.putExtra("user", player);
             startActivityForResult(it, 0);
         }
@@ -140,7 +140,7 @@ public class Hard3 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Hard3.this, Hard4.class);
+            Intent it = new Intent(Hard7.this, Hard8.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         } else{
@@ -149,7 +149,7 @@ public class Hard3 extends AppCompatActivity {
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Hard3.this, Hard4.class);
+            Intent it = new Intent(Hard7.this, Hard8.class);
             it.putExtra("user", player);
             startActivityForResult(it, 0);
         }
@@ -167,7 +167,7 @@ public class Hard3 extends AppCompatActivity {
             botao.setBackground(getResources().getDrawable(R.drawable.buttonverify));
             relogio.cancel();
             player.setPontuacao(Integer.parseInt(cronometro.getText().toString()));
-            Intent it = new Intent(Hard3.this, Hard4.class);
+            Intent it = new Intent(Hard7.this, Hard8.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         } else{
@@ -176,7 +176,7 @@ public class Hard3 extends AppCompatActivity {
             mp.start();
             botao.setBackground(getResources().getDrawable(R.drawable.buttonerror));
             relogio.cancel();
-            Intent it = new Intent(Hard3.this, Hard4.class);
+            Intent it = new Intent(Hard7.this, Hard8.class);
             it.putExtra("user",player);
             startActivityForResult(it, 0);
         }
@@ -197,7 +197,7 @@ public class Hard3 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     registrarOnline(player.getNome().toString(), player.getPontuacao());
-                    Intent it = new Intent(Hard3.this, MainActivity.class);
+                    Intent it = new Intent(Hard7.this, MainActivity.class);
                     startActivityForResult(it, 0);
                 }
             });
@@ -206,7 +206,7 @@ public class Hard3 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     if (rewardedAd.isLoaded()) {
-                        Activity activityContext = Hard3.this;
+                        Activity activityContext = Hard7.this;
                         RewardedAdCallback adCallback = new RewardedAdCallback() {
                             @Override
                             public void onRewardedAdOpened() {
@@ -220,14 +220,14 @@ public class Hard3 extends AppCompatActivity {
 
                             @Override
                             public void onUserEarnedReward(@NonNull RewardItem rewardItem) {
-                                AlertDialog.Builder abc = new AlertDialog.Builder(Hard3.this);
+                                AlertDialog.Builder abc = new AlertDialog.Builder(Hard7.this);
                                 View dialog = getLayoutInflater().inflate(R.layout.dialog_continuar, null);
                                 Button btnContinue = (Button)dialog.findViewById(R.id.btnContinuar);
 
                                 btnContinue.setOnClickListener(new View.OnClickListener() {
                                     @Override
                                     public void onClick(View v) {
-                                        Intent it = new Intent(Hard3.this, Hard4.class);
+                                        Intent it = new Intent(Hard7.this, Hard8.class);
                                         it.putExtra("user",player);
                                         startActivityForResult(it, 0);
                                     }
@@ -258,7 +258,7 @@ public class Hard3 extends AppCompatActivity {
             msg.setNegativeButton("OK", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    Intent it = new Intent(Hard3.this, MainActivity.class);
+                    Intent it = new Intent(Hard7.this, MainActivity.class);
                     startActivityForResult(it, 0);
                 }
             });
