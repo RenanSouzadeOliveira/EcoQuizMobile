@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.ecoquiz.hard.Hard0;
 import com.example.ecoquiz.model.Player;
 import com.example.ecoquiz.normal.Normal0;
 import com.example.ecoquiz.novato.Novato0;
@@ -56,6 +57,21 @@ public class SelecionarDificuldade extends AppCompatActivity {
             startActivityForResult(it, 0);
         } else{
             player = new Player(edtNome.getText().toString(), 0, "Normal");
+            it.putExtra("user", player);
+            startActivityForResult(it, 0);
+        }
+    }
+
+    public void nextHard(View v){
+        Intent it = new Intent(SelecionarDificuldade.this, Hard0.class);
+        EditText edtNome = (EditText)findViewById(R.id.edtNome);
+        Player player;
+        if(edtNome.getText().length() == 0){
+            player =  new Player(0,"Hard");
+            it.putExtra("user", player);
+            startActivityForResult(it, 0);
+        } else{
+            player = new Player(edtNome.getText().toString(), 0, "Hard");
             it.putExtra("user", player);
             startActivityForResult(it, 0);
         }

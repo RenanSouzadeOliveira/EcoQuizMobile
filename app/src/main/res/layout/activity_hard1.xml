@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hard.Hard0">
+    tools:context=".hard.Hard1">
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -20,7 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="@string/enunciado_hard0"
+        android:text="@string/enunciado_hard1"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="25sp"
@@ -36,10 +36,9 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/buttonstyle"
         android:onClick="verificarResposta0"
-        android:text="@string/R0H0"
+        android:text="@string/R0H1"
         android:textAlignment="center"
         android:textColor="@color/colotSecundari"
-        android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,10 +51,9 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/buttonstyle"
         android:onClick="verificarResposta1"
-        android:text="@string/R1H0"
+        android:text="@string/R1H1"
         android:textAlignment="center"
         android:textColor="@color/colotSecundari"
-        android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btnResposta0"
         app:layout_constraintStart_toStartOf="@+id/btnResposta0"
@@ -68,7 +66,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/buttonstyle"
         android:onClick="verificarResposta2"
-        android:text="@string/R2H0"
+        android:text="@string/R2H1"
         android:textAlignment="center"
         android:textColor="@color/colotSecundari"
         android:textStyle="bold"
@@ -83,7 +81,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/buttonstyle"
         android:onClick="verificarResposta3"
-        android:text="@string/R3H0"
+        android:text="@string/R3H1"
         android:textAlignment="center"
         android:textColor="@color/colotSecundari"
         android:textStyle="bold"
@@ -122,7 +120,6 @@
         android:id="@+id/txtPontuacao"
         android:layout_width="130dp"
         android:layout_height="33dp"
-        android:layout_marginTop="16dp"
         android:text="@string/pontuacao"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
@@ -136,7 +133,6 @@
         android:layout_width="45dp"
         android:layout_height="33dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
         android:text="@string/pontuacaoAtual"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
@@ -144,4 +140,5 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/txtPontuacao"
         app:layout_constraintTop_toBottomOf="@+id/txtCronometro" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,10 @@ public class PartidaController {
         respostas.add("CONSUMIDOR SECUNDÁRIO");
         respostas.add("AS AVES PISCÍVORAS");
         respostas.add("NATURAL E INTENSIFICADO POR AÇÕES HUMANAS");
+        respostas.add("USINAS NUCLEARES");
+        respostas.add("EFEITO ESTUFA");
+        respostas.add("AUMENTO DE TERREMOTOS");
+        respostas.add("ELEVAÇÃO DA UMIDADE");
 
 
         if(respostas.contains(alternativa)){

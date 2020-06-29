@@ -11,8 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".hard.Hard0"></activity>
-        <activity android:name=".Creditos" />
+        <activity android:name=".hard.Hard3" android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".hard.Hard2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hard.Hard1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".hard.Hard0"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Creditos"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ranking.RankingNormal"
             android:screenOrientation="portrait" />

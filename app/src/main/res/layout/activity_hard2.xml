@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".hard.Hard0">
+    tools:context=".hard.Hard2">
 
     <ImageView
         android:id="@+id/imgLogo"
@@ -19,8 +19,7 @@
         android:id="@+id/txtEnunciado"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/enunciado_hard0"
+        android:text="@string/enunciado_hard2"
         android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="25sp"
@@ -36,10 +35,9 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/buttonstyle"
         android:onClick="verificarResposta0"
-        android:text="@string/R0H0"
+        android:text="@string/R0H2"
         android:textAlignment="center"
         android:textColor="@color/colotSecundari"
-        android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,10 +50,9 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/buttonstyle"
         android:onClick="verificarResposta1"
-        android:text="@string/R1H0"
+        android:text="@string/R1H2"
         android:textAlignment="center"
         android:textColor="@color/colotSecundari"
-        android:textSize="13sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/btnResposta0"
         app:layout_constraintStart_toStartOf="@+id/btnResposta0"
@@ -68,12 +65,13 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/buttonstyle"
         android:onClick="verificarResposta2"
-        android:text="@string/R2H0"
+        android:text="@string/R2H2"
         android:textAlignment="center"
         android:textColor="@color/colotSecundari"
+        android:textSize="13sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/btnResposta1"
-        app:layout_constraintStart_toStartOf="@+id/btnResposta1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnResposta1" />
 
     <Button
@@ -83,7 +81,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/buttonstyle"
         android:onClick="verificarResposta3"
-        android:text="@string/R3H0"
+        android:text="@string/R3H2"
         android:textAlignment="center"
         android:textColor="@color/colotSecundari"
         android:textStyle="bold"

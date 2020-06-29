@@ -113,4 +113,25 @@
     <string name="enunciado_novato9">Relação ecológica entre duas espécies em que uma inibe ou impede o desenvolvimento da outra:</string>
     <string name="R2NO9">PREDAÇÃO</string>
     <string name="R3NO9">COMPETIÇÃO</string>
+    <string name="enunciado_hard0">Qual das práticas abaixo não emite poluentes na atmosfera?</string>
+    <string name="R0H0">PRODUÇÃO DE ENERGIA HIDROELÉTRICA</string>
+    <string name="R1H0">USO DE FERTILIZANTES</string>
+    <string name="R2H0">CONSTRUÇÃO DE ATERROS SANITÁRIOS</string>
+    <string name="R3H0">USINAS NUCLEARES</string>
+    <string name="crHard">15</string>
+    <string name="enunciado_hard1">O aquecimento global é consequência da intensificação de qual fenômeno natural do planeta?</string>
+    <string name="R0H1">INVERSÃO TÉRMICA</string>
+    <string name="R1H1">EFEITO ESTUFA</string>
+    <string name="R2H1">CHUVA ÁCIDA</string>
+    <string name="R3H1">EUTROFIZAÇÃO</string>
+    <string name="enunciado_hard2">Qual das alternativas abaixo, NÃO é uma grave consequência do efeito estufa?</string>
+    <string name="R0H2">DERRETIMENTO DAS CALOTAS POLARES</string>
+    <string name="R1H2">AUMENTO DE TERREMOTOS</string>
+    <string name="R2H2">MUDANÇAS NO REGIME DE CHUVAS</string>
+    <string name="R3H2">AUMENTO DO NÍVEL DOS OCEANOS</string>
+    <string name="enunciado_hard3">Podemos identificar como consequências do desmatamento todas as alternativas, exceto:</string>
+    <string name="R0H3">AUMENTO DO EFEITO ESTUFA</string>
+    <string name="R1H3">DIMINUIÇÃO DA BIODIVERSIDADE</string>
+    <string name="R2H3">ELEVAÇÃO DA UMIDADE</string>
+    <string name="R3H3">DESGASTE DO SOLO</string>
 </resources>
